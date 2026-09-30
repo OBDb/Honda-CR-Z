@@ -1,12 +1,12 @@
 command_id: DB33.0105
 test_cases:
 - expected_values:
-    ECT: 62
+    ECT: 58
   response: |-
-    18DAF10303410566
-    18DAF10403410566
-    18DAF11103410566
-    18DAF11D03410566
+    18DAF10303410562
+    18DAF10403410562
+    18DAF11103410562
+    18DAF11D03410562
 - expected_values:
     ECT: 82
   response: |-
@@ -18,6 +18,13 @@ test_cases:
     ECT: 83
   response: |-
     18DAF1030341057B
+    18DAF1040341057B
+    18DAF11D0341057B
+    18DAF1110341057B
+- expected_values:
+    ECT: 83
+  response: |-
+    18DAF1030341057B
     18DAF1110341057B
     18DAF11D0341057B
     18DAF1040341057B
@@ -25,9 +32,9 @@ test_cases:
     ECT: 84
   response: |-
     18DAF1030341057C
-    18DAF1040341057C
     18DAF11D0341057C
     18DAF1110341057C
+    18DAF1040341057C
 - expected_values:
     ECT: 87
   response: |-
@@ -57,13 +64,6 @@ test_cases:
     18DAF1030341057A
     18DAF11D0341057A
 - expected_values:
-    ECT: 84
-  response: |-
-    18DAF1040341057C
-    18DAF11D0341057C
-    18DAF1030341057C
-    18DAF1110341057C
-- expected_values:
     ECT: 98
   response: |-
     18DAF1040341058A
@@ -78,9 +78,9 @@ test_cases:
     18DAF1040341055B
     18DAF11D0341055B
 - expected_values:
-    ECT: 58
+    ECT: 56
   response: |-
-    18DAF11D03410562
-    18DAF10403410562
-    18DAF11103410562
-    18DAF10303410562
+    18DAF11D03410560
+    18DAF10303410560
+    18DAF10403410560
+    18DAF11103410560
