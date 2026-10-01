@@ -67,12 +67,12 @@
   "signals": [
     {"id": "CRZ_VTEC_VALVE_CTRL", "path": "Engine", "fmt": {"bix": 175, "len": 1, "max": 1, "unit": "offon" }, "name": "VTEC valve control", "description": "VTEC works by switching between two (or sometimes three) different camshaft profiles by engaging or disengaging a mechanism that locks the valve rocker arms together. When VTEC is OFF, the engine operates using the standard cam profile, which is typically optimized for fuel efficiency and low-end torque. When VTEC is ON, the system switches to a high-performance cam profile that allows the valves to open wider and for a longer duration, enabling better airflow at higher RPMs for increased power."}
   ]},
-{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2613"}, "freq": 1, "filter": { "to": 2012 },
+{ "hdr": "DA11", "rax": "11", "cmd": {"22": "2613"}, "freq": 1, "filter": { "to": 2012 }, "dbgfilter": { "to": 2010, "from": 2012 },
   "signals": [
     {"id": "CRZ_EVAP_PC_LOAD", "path": "Engine", "fmt": {"bix": 48,  "len": 8,  "max": 99.61, "mul": 100, "div": 255, "unit": "percent" }, "name": "Evaporative purge control load"},
     {"id": "CRZ_AC_P_RAW_CNT", "path": "Engine", "fmt": {"bix": 120, "len": 16, "max": 65535,                         "unit": "scalar"  }, "name": "Air conditioning pressure, raw count"}
   ]},
-{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2614"}, "freq": 5, "filter": { "to": 2012 },
+{ "hdr": "DA11", "rax": "11", "cmd": {"22": "2614"}, "freq": 5, "filter": { "to": 2012 }, "dbgfilter": { "to": 2010, "from": 2012 },
   "signals": [
     {"id": "CRZ_ST_CHG_RAW_CNT", "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 65535,                                             "unit": "scalar"  }, "name": "State of charge, raw count"},
     {"id": "CRZ_IMA_BAT_T",      "path": "Battery", "fmt": {"bix": 176, "len": 8,  "max": 419,   "min": -40, "mul": 9, "div": 5, "add": -40, "unit": "celsius" }, "name": "Motor assist battery temperature"}
@@ -85,7 +85,7 @@
   "signals": [
     {"id": "CRZ_RUNTM_V2", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
   ]},
-{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2661"}, "freq": 1, "filter": { "to": 2012 },
+{ "hdr": "DA11", "rax": "11", "cmd": {"22": "2661"}, "freq": 1, "filter": { "to": 2012 }, "dbgfilter": { "to": 2010, "from": 2012 },
   "signals": [
     {"id": "CRZ_ELD_ELEC_LOAD_DUTY", "path": "Engine", "fmt": {"bix": 136, "len": 8, "max": 127, "div": 2, "unit": "amps" }, "name": "Electric load detector current"}
   ]},
@@ -110,7 +110,7 @@
     {"id": "CRZ_EOT_VAR_1", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 1", "suggestedMetric": "engineOilTemperature"},
     {"id": "CRZ_EOT_VAR_2", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 2", "suggestedMetric": "engineOilTemperature"}
   ]},
-{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2668"}, "freq": 1, "filter": { "to": 2012 },
+{ "hdr": "DA11", "rax": "11", "cmd": {"22": "2668"}, "freq": 1, "filter": { "to": 2012 }, "dbgfilter": { "to": 2010, "from": 2012 },
   "signals": [
     {"id": "CRZ_ELEC_MOTOR_LOAD", "path": "Engine", "fmt": {"bix": 216, "len": 8, "max": 100, "min": -100, "mul": 40, "div": 51, "add": -100, "unit": "percent" }, "name": "Electric motor load"}
   ]},
