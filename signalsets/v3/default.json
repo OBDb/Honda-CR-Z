@@ -1,4 +1,7 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "DA11", "type": "engine" }
+  ],
+  "commands": [
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2610"}, "freq": 1, "filter": { "from": 2013 }, "dbgfilter": { "to": 2014, "from": 2016 },
   "signals": [
     {"id": "CRZ_GENERATOR", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
