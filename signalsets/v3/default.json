@@ -13,7 +13,8 @@
   ]},
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2612"}, "freq": 0.25, "filter": { "from": 2013 }, "dbgfilter": { "to": 2014, "from": 2016 },
   "signals": [
-    {"id": "CRZ_VTEC_CTRL", "path": "ECU", "fmt": {"bix": 168, "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable valve control"}
+    {"id": "CRZ_VTEC_PSW", "path": "Engine", "fmt": {"bix": 174, "len": 1, "max": 1, "unit": "offon" }, "name": "VTEC pressure switch"},
+    {"id": "CRZ_VTEC_SOL", "path": "Engine", "fmt": {"bix": 175, "len": 1, "max": 1, "unit": "offon" }, "name": "VTEC solenoid valve"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2614"}, "freq": 5, "filter": { "from": 2013 },
   "signals": [
