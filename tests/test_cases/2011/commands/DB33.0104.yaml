@@ -33,7 +33,7 @@ test_cases:
   response: |-
     18DAF1030341042F
     18DAF1040341042F
-    18DAF11103410432
+    18DAF11103410424
     18DAF11D0341042F
 - expected_values:
     LOAD_PCT: 94.11765
